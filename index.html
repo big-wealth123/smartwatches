@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Olanla SmartWatch</title>
+  <link rel="stylesheet" href="./font awesome stuff/font-awesome(4.7.0)/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- model-viewer (local fallback) -->
+  <script type="module" src="./model-viewer.min.js"></script>
+</head>
+<body>
+<header>
+  <div> <img src="./images/watch.png" alt=""><span>Olanla SmartWatch</span></div>
+  <div id="menu-btn" onclick="toggleMenu()" aria-controls="nav-menu" aria-expanded="false">☰</div>
+
+  <nav id="nav-menu" aria-hidden="true">
+    <button id="close-menu" class="close-btn" aria-label="Close menu">&times;</button>
+    <div>Home
+      <div>
+        <a href="#home">Overview</a>
+        <a href="#new">New Arrivals</a>
+      </div>
+    </div>
+
+    <div>Features
+      <div>
+        <a href="#health">Health & Fitness</a>
+        <a href="#gps">GPS & Navigation</a>
+        <a href="#connect">Connectivity</a>
+        <a href="#battery">Battery</a>
+      </div>
+    </div>
+
+    <div>Models
+      <div>
+        <a href="#model-a">Model A</a>
+        <a href="#model-b">Model B</a>
+        <a href="#compare">Compare Models</a>
+      </div>
+    </div>
+
+    <div>Specs
+      <div>
+        <a href="#display">Display</a>
+        <a href="#sensors">Sensors</a>
+        <a href="#connectivity">Connectivity</a>
+      </div>
+    </div>
+
+    <div>Support
+      <div>
+        <a href="#faq">FAQs</a>
+        <a href="#manual">User Manual</a>
+        <a href="#warranty">Warranty</a>
+      </div>
+    </div>
+
+    <a href="#buy">Buy Now</a>
+  </nav>
+</header>
+
+ <section id="home">
+  <div class="reveal">
+    <h1 class="typed">Experience the Future on Your Wrist</h1>
+    <p>Next‑gen smartwatch: AMOLED display, 7‑day battery, advanced health tracking, and AI features.</p>
+    <p class="hero-sub">Seamless calls, music, and notifications — precise GPS and multi‑sport tracking. Lightweight, durable, and designed for everyday adventure.</p>
+    <ul class="hero-features" aria-hidden="true">
+      <li>AMOLED display</li>
+      <li>7‑day battery</li>
+      <li>GPS & LTE</li>
+      <li>AI sleep coach</li>
+    </ul>
+
+    <div class="hero-cta">
+      <button onclick="scrollToSection('new')">Explore</button>
+      <button onclick="scrollToSection('buy')">Buy Now</button>
+    </div>
+  </div>
+  <div>
+   <model-viewer
+   src="./images/apple_watch_ultra.glb"
+   alt="3D watch"
+   auto-rotate
+   camera-controls
+   exposure="1"
+   shadow-intensity="1"
+   class="viewer"
+   ></model-viewer> 
+  </div>
+</section>
+
+
+<section id="features">
+  <div>Powerful features built for everyday life</div>
+  <div>
+    <article>
+      <div style="font-size:28px">❤️</div>
+      <h4>Health & Fitness</h4>
+      <p>Heart rate, ECG, SpO₂, sleep and activity tracking with smart insights.</p>
+    </article>
+
+    <article>
+      <div style="font-size:28px">🗺️</div>
+      <h4>GPS & Navigation</h4>
+      <p>Offline routes, turn‑by‑turn directions and multi‑sport tracking.</p>
+    </article>
+
+    <article>
+      <div style="font-size:28px">🔋</div>
+      <h4>Long Battery</h4>
+      <p>Up to 7 days in daily use and fast charging support.</p>
+    </article>
+
+    <article>
+      <div style="font-size:28px">🎨</div>
+      <h4>Customization</h4>
+      <p>Thousands of watch faces and quick‑swap straps to match your style.</p>
+    </article>
+  </div>
+</section>
+
+
+<section id="new">
+  <h3>Choose your model</h3>
+  <div>
+    <article id="model-a">
+      <img src="./images/david-svihovec-5qMN7iXbUsk-unsplash.jpg" alt="Model A" />
+      <h4>Model A</h4>
+      <p>Compact and lightweight — perfect for fitness.</p>
+      <button>Buy Model A</button>
+    </article>
+
+    <article id="model-b">
+      <img src="./images/alvan-nee-hoePQ6tDmJk-unsplash.jpg" alt="Model B" />
+      <h4>Model B</h4>
+      <p>Classic design with larger display and premium materials.</p>
+      <button>Buy Model B</button>
+    </article>
+
+    <article class="model-c">
+      <img src="./images/infino-photography-URlXm2Kx6uI-unsplash.jpg" alt="Model C" />
+      <h4>Model C</h4>
+      <p>Pro version with LTE, extra sensors and advanced features.</p>
+      <button>Buy Model C</button>
+    </article>
+
+  </div>
+</section>
+
+  </div>
+</section>
+
+
+<section class="specs">
+  <div>
+       <model-viewer
+   src="./images/apple_watch_ultra_-_orange.glb"
+   alt="orange model"
+   auto-rotate
+   camera-controls
+   class="viewer-small"
+   ></model-viewer>
+  </div>
+  <div>
+    <ul>
+      <li><strong>Display:</strong> AMOLED, 450 nits</li>
+      <li><strong>Battery:</strong> 7 days typical use</li>
+      <li><strong>Sensors:</strong> HR, SpO₂, accel, gyro</li>
+      <li><strong>Water</strong>: 5ATM</li>
+      <li><strong>Connectivity:</strong> Bluetooth, Wi‑Fi, LTE</li>
+    </ul>
+  </div>
+</section>
+<section class="specs">
+  <div>
+       <model-viewer
+   src="./images/apple_watch_ultra_2.glb"
+   alt="model 2"
+   auto-rotate
+   camera-controls
+   class="viewer-small"
+   ></model-viewer>
+  </div>
+  <div>
+    <ul>
+      <li><strong>Display:</strong> AMOLED, 450 nits</li>
+      <li><strong>Battery:</strong> 7 days typical use</li>
+      <li><strong>Sensors:</strong> HR, SpO₂, accel, gyro</li>
+      <li><strong>Water</strong>: 5ATM</li>
+      <li><strong>Connectivity:</strong> Bluetooth, Wi‑Fi, LTE</li>
+    </ul>
+    <div class="spec-actions"><button class="btn primary">Buy Now</button></div>
+  </div>
+</section>
+<section class="specs">
+  <div>
+       <model-viewer
+   src="./images/apple_watch_series_7_-_free_watch-face_sdctm.glb"
+   alt="series 7"
+   auto-rotate
+   camera-controls
+   class="viewer-small"
+   ></model-viewer>
+  </div>
+  <div>
+    <ul>
+      <li><strong>Display:</strong> AMOLED, 450 nits</li>
+      <li><strong>Battery:</strong> 7 days typical use</li>
+      <li><strong>Sensors:</strong> HR, SpO₂, accel, gyro</li>
+      <li><strong>Water</strong>: 5ATM</li>
+      <li><strong>Connectivity:</strong> Bluetooth, Wi‑Fi, LTE</li>
+    </ul>
+    <div class="spec-actions"><button class="btn primary">Buy Now</button></div>
+  </div>
+</section>
+<section class="specs">
+  <div>
+       <model-viewer
+   src="./images/apple_watch_series_5.glb"
+   alt="series 5"
+   auto-rotate
+   camera-controls
+   class="viewer-small"
+   ></model-viewer>
+  </div>
+  <div>
+    <ul>
+      <li><strong>Display:</strong> AMOLED, 450 nits</li>
+      <li><strong>Battery:</strong> 7 days typical use</li>
+      <li><strong>Sensors:</strong> HR, SpO₂, accel, gyro</li>
+      <li><strong>Water</strong>: 5ATM</li>
+      <li><strong>Connectivity:</strong> Bluetooth, Wi‑Fi, LTE</li>
+    </ul>
+    <div class="spec-actions"><button class="btn primary">Buy Now</button></div>
+  </div>
+</section>
+
+
+<section id="compare">
+  <h3>Compare models</h3>
+  <p class="compare-lead">At-a-glance comparison of key areas — battery life, display brightness, and sensor accuracy — so you can quickly see which model suits your lifestyle.</p>
+  <div class="compare-grid">
+    <div class="stat-wrap">
+      <h4>Model A</h4>
+      <div class="stat"><i data-target="55" style="width:0%"></i></div>
+    </div>
+    <div class="stat-wrap">
+      <h4>Model B</h4>
+      <div class="stat"><i data-target="75" style="width:0%"></i></div>
+    </div>
+    <div class="stat-wrap">
+      <h4>Model C</h4>
+      <div class="stat"><i data-target="90" style="width:0%"></i></div>
+    </div>
+  </div>
+
+  <!-- Added: quick comparison cards -->
+  <div class="compare-cards" aria-hidden="false">
+    <article class="compare-card">
+      <h4>Battery</h4>
+      <p><strong>Model A:</strong> 3 days<br><strong>Model B:</strong> 5 days<br><strong>Model C:</strong> 7 days</p>
+    </article>
+    <article class="compare-card">
+      <h4>Display</h4>
+      <p><strong>Model A:</strong> IPS — 300 nits<br><strong>Model B:</strong> AMOLED — 350 nits<br><strong>Model C:</strong> AMOLED — 450 nits</p>
+    </article>
+    <article class="compare-card">
+      <h4>Sensors</h4>
+      <p><strong>Model A:</strong> HR, accel<br><strong>Model B:</strong> HR, SpO₂, accel<br><strong>Model C:</strong> HR, SpO₂, ECG, gyro</p>
+    </article>
+  </div>
+
+  <!-- Added: detailed comparison table -->
+  <div class="compare-table-wrapper">
+    <table class="compare-table" aria-label="Model comparison">
+      <thead>
+        <tr><th>Feature</th><th>Model A</th><th>Model B</th><th>Model C</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Battery</td><td>3 days</td><td>5 days</td><td>7 days</td></tr>
+        <tr><td>Display</td><td>IPS — 300 nits</td><td>AMOLED — 350 nits</td><td>AMOLED — 450 nits</td></tr>
+        <tr><td>GPS</td><td>Basic</td><td>Improved</td><td>Precise</td></tr>
+        <tr><td>LTE</td><td>—</td><td>Optional</td><td>Included</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="compare-actions">
+    <button class="btn primary" onclick="scrollToSection('buy')">Buy Best Value</button>
+    <button class="btn" onclick="scrollToSection('new')">View Models</button>
+  </div>
+</section>
+
+
+<section id="testimonials">
+  <h3>What users say</h3>
+  <div class="testimonial-wrap">
+    <div class="test-carousel" id="carousel">
+      <blockquote>
+        <div style="display:flex;gap:12px;align-items:center"><img src="https://i.pravatar.cc/48?img=1" alt="user"><div><strong>Jane D.</strong><p style="color:#999">Runner</p></div></div>
+        <p style="margin-top:12px;color:#ddd">Love the battery life and the health insights — accurate and simple to use.</p>
+      </blockquote>
+
+      <blockquote>
+        <div style="display:flex;gap:12px;align-items:center"><img src="https://i.pravatar.cc/48?img=2" alt="user"><div><strong>Mark S.</strong><p style="color:#999">Traveler</p></div></div>
+        <p style="margin-top:12px;color:#ddd">GPS and navigation saved my hikes — reliable and fast.</p>
+      </blockquote>
+
+      <blockquote>
+        <div style="display:flex;gap:12px;align-items:center"><img src="https://i.pravatar.cc/48?img=3" alt="user"><div><strong>Lisa W.</strong><p style="color:#999">Designer</p></div></div>
+        <p style="margin-top:12px;color:#ddd">Stylish, lightweight, and the faces are beautiful.</p>
+      </blockquote>
+
+      <!-- Example: longer testimonial to show wrapping -->
+      <blockquote>
+        <div style="display:flex;gap:12px;align-items:center"><img src="https://i.pravatar.cc/48?img=4" alt="user"><div><strong>Sam R.</strong><p style="color:#999">Cyclist</p></div></div>
+        <p style="margin-top:12px;color:#ddd">Excellent GPS accuracy and easy-to-read stats during long rides — battery lasts several days even with heavy use.</p>
+      </blockquote>
+    </div>
+
+    <div class="testimonial-dots" aria-hidden="false"></div>
+
+    <!-- Accessible status region (hidden until used) -->
+    <div id="testimonial-status" class="testimonial-status sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  </div>
+
+  <form id="testimonial-form" class="testimonial-form" aria-label="Submit a review">
+    <input name="name" placeholder="Your name" />
+    <input name="role" placeholder="Role (e.g., Runner)" />
+    <textarea name="message" rows="2" placeholder="Share your experience"></textarea>
+    <div class="form-actions">
+      <button type="submit" class="btn primary"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit Review</button>
+      <button type="button" class="btn" onclick="document.getElementById('testimonial-form').reset()"><i class="fa fa-undo" aria-hidden="true"></i> Reset</button>
+    </div>
+  </form>
+</section>
+
+
+<section id="faq">
+  <h3>Frequently asked questions</h3>
+
+  <div class="faq-controls">
+    <input id="faq-search" placeholder="Search FAQs..." aria-label="Search frequently asked questions" />
+    <div class="faq-actions" role="group" aria-label="FAQ actions">
+      <button id="faq-expand-all" class="btn">Expand All</button>
+      <button id="faq-collapse-all" class="btn">Collapse All</button>
+    </div>
+  </div>
+
+  <div class="faq-categories" role="tablist" aria-label="FAQ categories">
+    <button class="faq-cat active" data-cat="all" aria-selected="true">All</button>
+    <button class="faq-cat" data-cat="battery">Battery</button>
+    <button class="faq-cat" data-cat="water">Water</button>
+    <button class="faq-cat" data-cat="connectivity">Connectivity</button>
+    <button class="faq-cat" data-cat="warranty">Warranty</button>
+    <button class="faq-cat" data-cat="shipping">Shipping</button>
+  </div>
+
+  <div class="faq-list">
+    <details data-cat="battery" id="q-battery-life">
+      <summary>What is the battery life? <button class="copy-link" data-target="q-battery-life" aria-label="Copy link to this question">🔗</button></summary>
+      <p>Typically up to 7 days depending on use and settings. Heavy GPS or continuous tracking will reduce runtime.</p>
+    </details>
+
+    <details data-cat="water" id="q-waterproof">
+      <summary>Is it waterproof? <button class="copy-link" data-target="q-waterproof" aria-label="Copy link to this question">🔗</button></summary>
+      <p>Yes, rated to 5ATM which is suitable for swimming and showering. Avoid high‑speed water sports.</p>
+    </details>
+
+    <details data-cat="connectivity" id="q-lte">
+      <summary>Does it support LTE? <button class="copy-link" data-target="q-lte" aria-label="Copy link to this question">🔗</button></summary>
+      <p>Model C includes LTE for standalone calls and data. Model B offers LTE as an optional configuration.</p>
+    </details>
+
+    <details data-cat="warranty" id="q-warranty">
+      <summary>What warranty does it have? <button class="copy-link" data-target="q-warranty" aria-label="Copy link to this question">🔗</button></summary>
+      <p>We offer a 1-year limited warranty covering manufacturing defects. Extended plans are available at checkout.</p>
+    </details>
+
+    <details data-cat="shipping" id="q-shipping">
+      <summary>How long is shipping? <button class="copy-link" data-target="q-shipping" aria-label="Copy link to this question">🔗</button></summary>
+      <p>Standard shipping is 3–7 business days (domestic); expedited and international options are available.</p>
+    </details>
+
+    <details data-cat="connectivity" id="q-compatibility">
+      <summary>Which phones is it compatible with? <button class="copy-link" data-target="q-compatibility" aria-label="Copy link to this question">🔗</button></summary>
+      <p>Works with most modern iOS and Android devices (iOS 13+/Android 9+). Some features are OS‑dependent.</p>
+    </details>
+
+    <details data-cat="battery" id="q-fast-charge">
+      <summary>Does it support fast charging? <button class="copy-link" data-target="q-fast-charge" aria-label="Copy link to this question">🔗</button></summary>
+      <p>Yes — fast charging provides a day's worth of power in about 20 minutes.</p>
+    </details>
+
+    <details data-cat="shipping" id="q-returns">
+      <summary>What's the returns policy? <button class="copy-link" data-target="q-returns" aria-label="Copy link to this question">🔗</button></summary>
+      <p>30‑day return policy for unopened or gently used items. See the Returns section for steps and exceptions.</p>
+    </details>
+
+  </div>
+</section>
+
+
+<section id="newsletter" aria-labelledby="newsletter-h">
+  <div class="newsletter-inner">
+    <div class="newsletter-info">
+      <h3 id="newsletter-h">Stay updated — get the latest launches and offers</h3>
+      <p class="newsletter-lead">Join our newsletter for product updates, early access, and exclusive discounts. Manage your preferences below.</p>
+      <ul class="newsletter-benefits">
+        <li>Early access to new models</li>
+        <li>Exclusive discounts</li>
+        <li>Tips, tutorials, and how-tos</li>
+      </ul>
+    </div>
+
+    <form id="newsletter-form" class="newsletter-form" aria-label="Subscribe to the Olanla newsletter">
+      <input id="newsletter-name" name="name" placeholder="Your name (optional)" />
+      <input id="newsletter-email" name="email" placeholder="Your email address" required />
+
+      <div class="newsletter-row">
+        <label>
+          <select id="newsletter-frequency" aria-label="Newsletter frequency">
+            <option value="weekly">Weekly</option>
+            <option value="monthly" selected>Monthly</option>
+          </select>
+        </label>
+        <div class="newsletter-topics" aria-label="Topics" role="group">
+          <label><input type="checkbox" name="topics" value="updates" checked> Updates</label>
+          <label><input type="checkbox" name="topics" value="offers"> Offers</label>
+          <label><input type="checkbox" name="topics" value="tips"> Tips</label>
+        </div>
+      </div>
+
+      <label class="consent"><input type="checkbox" id="newsletter-consent" required> I agree to receive marketing emails and accept the <a href="#privacy">Privacy Policy</a>.</label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary"><i class="fa fa-envelope" aria-hidden="true"></i> Subscribe</button>
+        <button type="button" class="btn" id="newsletter-reset">Reset</button>
+      </div>
+
+      <div id="newsletter-status" class="testimonial-status sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    </form>
+  </div>
+</section>
+
+
+<footer>
+  <div>
+    <strong>Olanla SmartWatch</strong>
+    <p style="color:#999;margin-top:8px">Premium smartwatches designed for everyday life.</p>
+  </div>
+  <div>
+    <h4>Support</h4>
+    <a href="#faq">FAQs</a><br>
+    <a href="#manual">Manual</a><br>
+    <a href="#warranty">Warranty</a>
+  </div>
+  <div>
+    <h4>Company</h4>
+    <a href="#about">About</a><br>
+    <a href="#careers">Careers</a>
+  </div>
+  <div>
+    <h4>Social</h4>
+    <a href="#">Twitter</a><br>
+    <a href="#">Instagram</a>
+  </div>
+</footer>  
+
+<script>
+  /* menu toggle + accessibility attributes */
+  function toggleMenu(){
+    const menu = document.getElementById('nav-menu');
+    const btn = document.getElementById('menu-btn');
+    if(!menu || !btn) return;
+    menu.classList.toggle('show-menu');
+    const isOpen = menu.classList.contains('show-menu');
+    btn.setAttribute('aria-expanded', isOpen);
+    btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    menu.setAttribute('aria-hidden', !isOpen);
+    document.body.classList.toggle('menu-open', isOpen);
+  }
+
+  /* initialize ARIA + keyboard handler for button and close icon */
+  document.addEventListener('DOMContentLoaded', ()=>{
+    const btn = document.getElementById('menu-btn');
+    if(!btn) return;
+    btn.setAttribute('role','button');
+    btn.setAttribute('aria-expanded', false);
+    btn.setAttribute('aria-label','Open menu');
+    btn.setAttribute('tabindex',0);
+    btn.addEventListener('keypress', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleMenu(); } });
+
+    const closeBtn = document.getElementById('close-menu');
+    if(closeBtn) closeBtn.addEventListener('click', toggleMenu);
+
+    // submenu touch/click toggles for mobile (accordion behavior)
+    const navMenu = document.getElementById('nav-menu');
+    if(navMenu){
+      const parents = navMenu.querySelectorAll(':scope > div');
+      parents.forEach((parent, idx)=>{
+        const submenu = parent.querySelector(':scope > div');
+        if(!submenu) return;
+        const submenuId = submenu.id || ('submenu-' + idx);
+        submenu.id = submenuId;
+        parent.setAttribute('aria-controls', submenuId);
+        parent.setAttribute('aria-expanded', false);
+        submenu.setAttribute('aria-hidden', true);
+
+        parent.addEventListener('click', (e)=>{
+          // don't toggle when clicking links inside submenu
+          if(e.target.closest('a')) return;
+          const isOpen = parent.classList.toggle('submenu-open');
+          parent.setAttribute('aria-expanded', isOpen);
+          submenu.setAttribute('aria-hidden', !isOpen);
+        });
+      });
+
+      // remove open states when resizing to desktop
+      window.addEventListener('resize', ()=>{
+        if(window.innerWidth > 900){
+          navMenu.querySelectorAll('.submenu-open').forEach(el=>el.classList.remove('submenu-open'));
+          navMenu.querySelectorAll('[aria-hidden]').forEach(s=>s.removeAttribute('aria-hidden'));
+          navMenu.querySelectorAll('[aria-expanded]').forEach(p=>p.setAttribute('aria-expanded', false));
+        }
+      });
+    }
+  });
+
+  /* close menu when clicking outside */
+  document.addEventListener('click', (e)=>{
+    const menu = document.getElementById('nav-menu');
+    const btn = document.getElementById('menu-btn');
+    if(!menu || !btn) return;
+    if(menu.classList.contains('show-menu') && !menu.contains(e.target) && !btn.contains(e.target)){
+      menu.classList.remove('show-menu');
+      menu.setAttribute('aria-hidden', true);
+      btn.setAttribute('aria-expanded', false);
+      btn.setAttribute('aria-label', 'Open menu');
+      document.body.classList.remove('menu-open');
+    }
+  });
+
+  /* close menu on Escape */
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape'){
+      const menu = document.getElementById('nav-menu');
+      const btn = document.getElementById('menu-btn');
+      if(menu){ menu.classList.remove('show-menu'); menu.setAttribute('aria-hidden', true); }
+      if(btn){ btn.setAttribute('aria-expanded', false); btn.setAttribute('aria-label', 'Open menu'); }
+      document.body.classList.remove('menu-open');
+    }
+  });
+
+  /* scroll to section */
+  function scrollToSection(id){
+    var el=document.getElementById(id);if(!el)return;el.scrollIntoView({behavior:'smooth',block:'start'});const menu=document.getElementById('nav-menu');if(menu)menu.classList.remove('show-menu')}
+
+  /* simple carousel auto-scroll (improved: controls, pause, and snap) */
+  (function(){
+    const carousel=document.getElementById('carousel');
+    if(!carousel) return;
+
+    let autoId=null;
+    const scrollBy = ()=>{
+      const itemWidth = carousel.querySelector('blockquote')?.offsetWidth || 320;
+      const next = Math.min(carousel.scrollLeft + itemWidth + 20, carousel.scrollWidth - carousel.clientWidth);
+      if(carousel.scrollLeft >= (carousel.scrollWidth - carousel.clientWidth - 10)) carousel.scrollTo({left:0,behavior:'smooth'});
+      else carousel.scrollBy({left:itemWidth+20,behavior:'smooth'});
+    }
+    const startAuto = ()=>{ if(autoId) clearInterval(autoId); autoId=setInterval(scrollBy,3500); }
+    const stopAuto = ()=>{ if(autoId) clearInterval(autoId); autoId=null; }
+
+    startAuto();
+    carousel.addEventListener('mouseenter',stopAuto);
+    carousel.addEventListener('mouseleave',startAuto);
+
+    // controls
+    const controls = document.createElement('div'); controls.className='carousel-controls';
+    const prev = document.createElement('button'); prev.innerHTML='◀'; prev.setAttribute('aria-label','Previous');
+    const next = document.createElement('button'); next.innerHTML='▶'; next.setAttribute('aria-label','Next');
+    prev.addEventListener('click', ()=>{ carousel.scrollBy({left:- (carousel.querySelector('blockquote')?.offsetWidth || 320) - 20, behavior:'smooth'}) });
+    next.addEventListener('click', ()=>{ carousel.scrollBy({left:(carousel.querySelector('blockquote')?.offsetWidth || 320) + 20, behavior:'smooth'}) });
+    controls.appendChild(prev); controls.appendChild(next);
+    carousel.parentElement.style.position='relative'; carousel.parentElement.appendChild(controls);
+
+    // hide controls if not needed (no overflow)
+    function updateControlsVisibility(){ try{ if(carousel.scrollWidth <= carousel.clientWidth + 8) controls.style.display = 'none'; else controls.style.display = 'flex'; }catch(e){} }
+    updateControlsVisibility();
+    window.addEventListener('resize', updateControlsVisibility);
+    // also update after images / fonts load (small delay)
+    setTimeout(updateControlsVisibility, 350);
+  })();
+
+  /* newsletter form: validation, consent, localStorage persistence, and accessible status */
+  (function(){
+    const form = document.getElementById('newsletter-form');
+    const statusEl = document.getElementById('newsletter-status');
+    const STORAGE = 'ol_newsletter_v1';
+    function isEmail(e){ return /\S+@\S+\.\S+/.test(e); }
+    function showStatus(msg, success = true){ if(!statusEl) return; statusEl.textContent = msg; statusEl.classList.remove('sr-only'); statusEl.classList.add('testimonial-success-visible'); statusEl.style.color = success ? 'var(--accent2)' : 'tomato'; if(!success && form) form.classList.add('newsletter-invalid'); if(success){ const wrap = document.createElement('div'); wrap.className = 'newsletter-confetti'; for(let i=0;i<12;i++){ const p=document.createElement('span'); p.className='piece'; p.style.background = ['#4A90E2','#50E3C2','#FFD166','#F79E02','#C4FF6F'][Math.floor(Math.random()*5)]; p.style.left = (Math.random()*100)+'%'; p.style.animationDelay = (Math.random()*300)+'ms'; wrap.appendChild(p); } document.getElementById('newsletter')?.appendChild(wrap); setTimeout(()=>wrap.remove(),1200); } statusEl.focus && statusEl.focus(); setTimeout(()=>{ statusEl.classList.add('sr-only'); statusEl.classList.remove('testimonial-success-visible'); statusEl.textContent = ''; if(form) form.classList.remove('newsletter-invalid'); }, 3800); }
+    function save(sub){ try{ const raw = localStorage.getItem(STORAGE) || '[]'; const arr = JSON.parse(raw); arr.push(Object.assign({ts: Date.now()}, sub)); localStorage.setItem(STORAGE, JSON.stringify(arr.slice(-50))); }catch(e){ console.warn('newsletter save failed', e); } }
+
+    if(!form) return;
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      const name = (document.getElementById('newsletter-name')||{}).value.trim();
+      const email = (document.getElementById('newsletter-email')||{}).value.trim();
+      const freq = (document.getElementById('newsletter-frequency')||{}).value || 'monthly';
+      const topics = Array.from(form.querySelectorAll('input[name="topics"]:checked')).map(i=>i.value);
+      const consent = (document.getElementById('newsletter-consent')||{}).checked;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if(!email || !isEmail(email)){ showStatus('Please enter a valid email address.', false); return; }
+      if(!consent){ showStatus('Please agree to the Privacy Policy to subscribe.', false); return; }
+      // simulate network delay and persist
+      submitBtn.disabled = true; setTimeout(()=>{
+        save({name, email, freq, topics});
+        form.reset(); submitBtn.disabled = false; showStatus('Subscribed! Check your inbox for a confirmation.');
+      }, 600);
+    });
+
+    document.getElementById('newsletter-reset')?.addEventListener('click', ()=> form.reset());
+
+    // Prefill with last saved email if available
+    try{
+      const raw = localStorage.getItem(STORAGE); if(raw){ const arr = JSON.parse(raw); const last = arr[arr.length-1]; if(last){ document.getElementById('newsletter-email').value = last.email || ''; document.getElementById('newsletter-name').value = last.name || ''; } }
+    }catch(e){/* ignore */}
+  })();
+
+  /* reveal on scroll + header shrink + active nav highlighting + typing, stats, parallax, tilt */
+  (function(){
+    const header = document.querySelector('body > header:nth-of-type(1)');
+    const navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+
+    function throttle(fn, wait=100){let last=0; return (...args)=>{const now=Date.now(); if(now-last>wait){last=now;fn(...args)}}}
+
+    function onScroll(){
+      const scrolled = window.scrollY > 48;
+      if(header) header.classList.toggle('header-shrink', scrolled);
+      if(header){ const logo = header.querySelector('img'); if(logo) logo.classList.toggle('shrunk', scrolled); }
+
+      // active link highlight
+      navLinks.forEach(a=>{
+        const id=a.getAttribute('href').slice(1);
+        const sec=document.getElementById(id);
+        if(!sec) return;
+        const rect = sec.getBoundingClientRect();
+        if(rect.top <= 120 && rect.bottom > 120) a.classList.add('active'); else a.classList.remove('active');
+      });
+    }
+    window.addEventListener('scroll', throttle(onScroll, 80));
+    onScroll();
+
+    // reveal elements with IntersectionObserver
+    const reveals = document.querySelectorAll('.reveal');
+    if(reveals.length){
+      const io = new IntersectionObserver((entries)=>{entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in-view')})},{threshold:0.12});
+      reveals.forEach(r=>io.observe(r));
+    }
+
+    // hook up nav anchors for smooth behaviour + close menu on click
+    document.querySelectorAll('nav a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{ e.preventDefault(); const id=a.getAttribute('href').slice(1); const el=document.getElementById(id); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); document.getElementById('nav-menu')?.classList.remove('show-menu'); document.getElementById('menu-btn')?.setAttribute('aria-expanded', false); document.body.classList.remove('menu-open'); });
+    });
+
+    // typing headline removed — replaced with static heading to keep content non-animated
+    // If you want the typing effect back later, we can re-enable a controlled version on request.
+
+    // animate stat bars + animate compare intro
+    const statsSection = document.getElementById('compare');
+    if(statsSection){
+      const si = new IntersectionObserver((entries)=>{ entries.forEach(en=>{ if(en.isIntersecting){ const target = en.target; target.classList.add('in-view'); const bars = target.querySelectorAll('i[data-target]'); bars.forEach((i, idx)=>{ const t = +i.dataset.target; setTimeout(()=>{ i.style.transition='width 1.2s cubic-bezier(.2,.9,.3,1)'; i.style.width = t + '%'; }, idx * 140); }); si.unobserve(en.target); } }); }, {threshold:0.18});
+      si.observe(statsSection);
+    }
+
+    // parallax for model-viewer + ensure model-viewer has a visible height and fallback message
+    const models = document.querySelectorAll('model-viewer');
+    function showModelFallback(m){ if(m.dataset.fallbackAdded) return; const div=document.createElement('div'); div.textContent='3D model unavailable'; div.style.cssText='color:#ddd;padding:12px;text-align:center;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:8px;margin-top:12px'; m.insertAdjacentElement('afterend', div); m.dataset.fallbackAdded='1'; }
+    models.forEach(m=>{
+      // if computed height is 0 (overridden by other rules) force a usable height
+      const comp = getComputedStyle(m).height;
+      if(!comp || comp === '0px') m.style.height = '420px';
+
+      // attempt to verify model file exists (works when served over HTTP)
+      const src = m.getAttribute('src');
+      if(src){
+        try{ fetch(src, {method:'HEAD'}).then(res=>{ if(!res.ok) showModelFallback(m) }).catch(()=>showModelFallback(m)); }
+        catch(e){ /* fetch may not work on file:// - show friendly UI instead */ showModelFallback(m); }
+      }
+    });
+
+    // Parallax for model-viewer removed to keep viewers static (no transforms applied)
+    // window.removeEventListener('scroll', throttle(doParallax, 20));
+
+
+    // tilt cards
+    const tiltEls = document.querySelectorAll('section#new article, section#features article');
+    tiltEls.forEach(el=>{
+      el.style.transition='transform .16s ease, box-shadow .16s ease';
+      el.addEventListener('mousemove', e=>{
+        const r=el.getBoundingClientRect(); const x=(e.clientX-r.left)/r.width; const y=(e.clientY-r.top)/r.height; const rx=(y-0.5)*10; const ry=(x-0.5)*-10; el.style.transform=`perspective(800px) rotateX(${rx}deg) rotateY(${ry}deg) translateZ(8px)`; el.style.boxShadow='0 20px 40px rgba(0,0,0,.5)';
+      });
+      el.addEventListener('mouseleave', ()=>{ el.style.transform='none'; el.style.boxShadow='none'; });
+    });
+
+  })();
+
+  /* reveal hero on scroll: keep legacy behavior as well */
+  window.addEventListener('scroll',()=>{document.body.classList.add('scrolled')});
+</script>
+
+<script>
+  (function(){
+    const carousel = document.getElementById('carousel');
+    const dotsWrap = document.querySelector('.testimonial-dots');
+    const statusEl = document.getElementById('testimonial-status');
+    const STORAGE_KEY = 'ol_testimonials_v1';
+    if(!carousel || !dotsWrap) return;
+
+    function escapeHtml(s){ return (''+s).replace(/[&<>'"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[ch]); }
+
+    function createBlock({name='Anonymous', role='', msg='Thanks for the great product!', imgSrc}){
+      const block = document.createElement('blockquote');
+      block.innerHTML = `<div style="display:flex;gap:12px;align-items:center"><img src="${escapeHtml(imgSrc)}" alt="user"><div><strong>${escapeHtml(name)}</strong><p style="color:#999">${escapeHtml(role)}</p></div></div><p style="margin-top:12px;color:#ddd">${escapeHtml(msg)}</p>`;
+      return block;
+    }
+
+    function loadStored(){
+      try{
+        const raw = localStorage.getItem(STORAGE_KEY);
+        if(!raw) return;
+        const arr = JSON.parse(raw);
+        arr.forEach(item => carousel.appendChild(createBlock(item)));
+      }catch(e){ console.warn('testimonial load failed',e); }
+    }
+
+    function saveStored(item){
+      try{
+        const raw = localStorage.getItem(STORAGE_KEY) || '[]';
+        const arr = JSON.parse(raw);
+        arr.push(item);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(arr.slice(-20)));
+      }catch(e){ console.warn('testimonial save failed',e); }
+    }
+
+    function rebuildDots(){
+      dotsWrap.innerHTML = '';
+      const items = carousel.querySelectorAll('blockquote');
+      items.forEach((b,i)=>{
+        const d = document.createElement('button');
+        d.className = 'testimonial-dot';
+        d.type = 'button';
+        d.setAttribute('aria-label','Show testimonial ' + (i+1));
+        d.tabIndex = 0;
+        d.addEventListener('click', ()=>{ b.scrollIntoView({behavior:'smooth', block:'nearest', inline:'center'}); });
+        d.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); d.click(); } });
+        dotsWrap.appendChild(d);
+      });
+      updateActiveDot();
+    }
+
+    let io;
+    function observeItems(){
+      if(io) io.disconnect();
+      const options = {root: carousel, threshold: 0.55};
+      if(!('IntersectionObserver' in window)){
+        // fallback: mark everything in-view
+        carousel.querySelectorAll('blockquote').forEach((b,i)=>{ b.classList.add('in-view'); const btn = dotsWrap.children[i]; if(btn) btn.classList.add('active'); });
+        return;
+      }
+      io = new IntersectionObserver((entries)=>{
+        entries.forEach(en=>{
+          const idx = Array.prototype.indexOf.call(carousel.querySelectorAll('blockquote'), en.target);
+          const btn = dotsWrap.children[idx];
+          // toggle visual 'in-view' class for animation/visibility
+          if(en.isIntersecting){
+            en.target.classList.add('in-view');
+            if(btn){ btn.classList.add('active'); btn.setAttribute('aria-current','true'); }
+          } else {
+            en.target.classList.remove('in-view');
+            if(btn){ btn.classList.remove('active'); btn.removeAttribute('aria-current'); }
+          }
+        });
+      }, options);
+      carousel.querySelectorAll('blockquote').forEach(b => io.observe(b));
+    }
+
+    function updateActiveDot(){
+      const items = carousel.querySelectorAll('blockquote');
+      const center = carousel.scrollLeft + carousel.clientWidth/2;
+      items.forEach((b,i) =>{
+        const btn = dotsWrap.children[i];
+        if(!btn) return;
+        if(center >= b.offsetLeft && center < (b.offsetLeft + b.offsetWidth)){
+          btn.classList.add('active'); btn.setAttribute('aria-current','true');
+        }else{ btn.classList.remove('active'); btn.removeAttribute('aria-current'); }
+      });
+    }
+
+    function showStatus(msg){
+      if(!statusEl) return;
+      statusEl.textContent = msg;
+      statusEl.classList.remove('sr-only');
+      statusEl.classList.add('testimonial-success-visible');
+      statusEl.focus();
+      setTimeout(()=>{ statusEl.classList.add('sr-only'); statusEl.classList.remove('testimonial-success-visible'); statusEl.textContent = ''; }, 3000);
+    }
+
+    // init
+    loadStored();
+    rebuildDots();
+    observeItems();
+
+    window.addEventListener('resize', ()=>{ rebuildDots(); observeItems(); });
+    carousel.addEventListener('scroll', throttle(()=>{ updateActiveDot(); }, 120));
+
+    // Form handling
+    const form = document.getElementById('testimonial-form');
+    if(form){
+      form.addEventListener('submit', (e)=>{
+        e.preventDefault();
+        const name = form.name.value.trim() || 'Anonymous';
+        const role = form.role.value.trim();
+        const msg = form.message.value.trim() || 'Thanks for the great product!';
+        const imgSrc = 'https://i.pravatar.cc/48?img=' + (Math.floor(Math.random()*70)+1);
+        const item = {name, role, msg, imgSrc};
+        carousel.appendChild(createBlock(item));
+        saveStored(item);
+        form.reset();
+        setTimeout(()=>{ rebuildDots(); observeItems(); carousel.scrollTo({left: carousel.scrollWidth, behavior:'smooth'}); }, 120);
+        showStatus('Thank you — your review was added.');
+      });
+    }
+
+    // small helper throttler
+    function throttle(fn, wait=100){
+      let last=0, t;
+      return (...args)=>{ const now = Date.now(); if(now-last>wait){ last=now; fn(...args); } else { clearTimeout(t); t=setTimeout(()=>{ last=Date.now(); fn(...args); }, wait); } };
+    }
+
+    // expose for debugging
+    window._testimonials = {rebuildDots, observeItems, loadStored, saveStored};
+  })();
+</script>
+
+<script>
+(function(){
+  const search = document.getElementById('faq-search');
+  const categories = Array.from(document.querySelectorAll('.faq-cat'));
+  const details = Array.from(document.querySelectorAll('#faq .faq-list details'));
+  const expandBtn = document.getElementById('faq-expand-all');
+  const collapseBtn = document.getElementById('faq-collapse-all');
+  const faqEl = document.getElementById('faq');
+
+  // tiny status for screen readers
+  const status = document.createElement('div'); status.className='sr-only'; status.setAttribute('role','status'); status.id='faq-status'; faqEl && faqEl.appendChild(status);
+
+  function applyFilter(){
+    const q = (search?.value || '').trim().toLowerCase();
+    const activeCat = document.querySelector('.faq-cat.active')?.dataset.cat || 'all';
+    details.forEach(d=>{
+      const summary = d.querySelector('summary')?.textContent || '';
+      const body = d.querySelector('p')?.textContent || '';
+      const text = (summary + ' ' + body).toLowerCase();
+      const matchesQ = !q || text.indexOf(q) !== -1;
+      const matchesCat = activeCat === 'all' || (d.dataset.cat === activeCat);
+      d.hidden = !(matchesQ && matchesCat);
+    });
+  }
+
+  categories.forEach(c=> c.addEventListener('click', ()=>{
+    categories.forEach(cc=>{ cc.classList.remove('active'); cc.setAttribute('aria-selected','false'); });
+    c.classList.add('active'); c.setAttribute('aria-selected','true');
+    applyFilter();
+  }));
+  search && search.addEventListener('input', applyFilter);
+
+  expandBtn && expandBtn.addEventListener('click', ()=>{ details.forEach(d=>{ if(!d.hidden) d.open = true }); status.textContent='All visible questions expanded.'; setTimeout(()=>status.textContent='',2300);});
+  collapseBtn && collapseBtn.addEventListener('click', ()=>{ details.forEach(d=>{ if(!d.hidden) d.open = false }); status.textContent='Questions collapsed.'; setTimeout(()=>status.textContent='',2300);});
+
+  document.addEventListener('click', (e)=>{
+    const btn = e.target.closest('.copy-link'); if(!btn) return; const id = btn.dataset.target; if(!id) return;
+    const url = location.origin + location.pathname + '#' + id;
+    if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(url).then(()=>{ status.textContent='Link copied to clipboard'; setTimeout(()=>status.textContent='',2200); }).catch(()=>{ alert('Copy failed: '+url); }); }
+    else { try{ const ta = document.createElement('textarea'); ta.value = url; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); status.textContent='Link copied to clipboard'; setTimeout(()=>status.textContent='',2200); }catch(e){ alert(url); } }
+  });
+
+  // keyboard toggles on summaries
+  document.querySelectorAll('#faq .faq-list summary').forEach(s=>{
+    s.setAttribute('tabindex',0);
+    s.addEventListener('keydown', (e)=>{ if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); const d = s.closest('details'); if(d) d.open = !d.open; } });
+  });
+
+})();
+</script>
+
+</body>
+</html>
